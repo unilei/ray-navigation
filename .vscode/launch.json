@@ -1,0 +1,48 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "🚀 Launch Chrome (Dev)",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/src",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      },
+      "userDataDir": true
+    },
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "🔗 Attach to Chrome",
+      "port": 9222,
+      "webRoot": "${workspaceFolder}/src"
+    },
+    {
+      "type": "firefox",
+      "request": "launch",
+      "name": "🦊 Launch Firefox (Dev)",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/src",
+      "reAttach": true,
+      "pathMappings": [
+        {
+          "url": "webpack:///src",
+          "path": "${workspaceFolder}/src"
+        }
+      ]
+    },
+    {
+      "type": "edge",
+      "request": "launch",
+      "name": "🌊 Launch Edge (Dev)",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/src",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      }
+    }
+  ],
+  "compounds": []
+}

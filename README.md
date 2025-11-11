@@ -139,6 +139,17 @@ nav-app/
 - CSS 变量用于主题管理
 - 高效的搜索过滤算法
 
+## 调试
+
+🐛 **[如何调试？点击这里](HOW_TO_DEBUG.md)** - 快速找到适合你的调试方法
+
+遇到问题？我们提供完整的调试文档：
+- 🌱 [调试入门](docs/DEBUG_GETTING_STARTED.md) - 5分钟快速上手（推荐新手）
+- ⚡ [调试速查表](docs/DEBUG_CHEATSHEET.md) - 快速参考
+- 📘 [完整调试指南](docs/DEBUG.md) - 详细文档
+- 💡 [调试示例](docs/DEBUG_EXAMPLES.md) - 实际代码
+- 🎓 [学习资源](docs/DEBUG_RESOURCES.md) - 教程和工具
+
 ## 浏览器支持
 
 - Chrome (最新版)
@@ -149,6 +160,25 @@ nav-app/
 ## 许可证
 
 MIT
+
+## 文档
+
+📚 **[文档中心](docs/README.md)** - 所有文档的导航页面
+
+### 快速开始
+- 📖 [快速开始指南](QUICKSTART.md) - 5分钟快速上手
+- 📘 [用户使用指南](docs/GUIDE.md) - 详细功能说明
+
+### 调试文档（完整）
+- 🌱 [调试入门](docs/DEBUG_GETTING_STARTED.md) - 5分钟学会调试（推荐新手）
+- ⚡ [调试速查表](docs/DEBUG_CHEATSHEET.md) - 快速参考
+- 📘 [调试指南](docs/DEBUG.md) - 完整的调试文档
+- 💡 [调试示例](docs/DEBUG_EXAMPLES.md) - 实用调试代码示例
+- 🎓 [调试资源](docs/DEBUG_RESOURCES.md) - 学习资源和工具
+
+### 其他
+- 🤝 [贡献指南](CONTRIBUTING.md) - 如何贡献代码
+- 📋 [项目总结](PROJECT_SUMMARY.md) - 项目概览
 
 ## 贡献
 

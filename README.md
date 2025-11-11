@@ -79,6 +79,24 @@ npm run preview
 yarn preview
 ```
 
+### 部署
+
+部署到 GitHub Pages：
+
+```bash
+npm run deploy:auto
+# 或手动部署
+./deploy.sh
+```
+
+📚 **完整部署指南**: [DEPLOY.md](DEPLOY.md)
+
+支持的部署平台：
+- GitHub Pages（自动部署）
+- Vercel
+- Netlify
+- 任意静态服务器
+
 ## 项目结构
 
 ```

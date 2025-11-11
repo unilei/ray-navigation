@@ -48,6 +48,35 @@ npm run preview
 
 ## 🚀 部署
 
+### 自动部署到 GitHub Pages（推荐）
+
+最简单的部署方式：
+
+```bash
+# 使用部署脚本
+npm run deploy:auto
+# 或
+./deploy.sh
+```
+
+脚本会自动：
+1. ✅ 检查代码
+2. 🔨 构建项目
+3. 📤 推送到 main 分支
+4. 🚀 触发 GitHub Actions 自动部署
+
+**或者手动推送**：
+
+```bash
+git add .
+git commit -m "部署更新"
+git push origin main
+```
+
+代码推送后，GitHub Actions 会自动构建和部署。
+
+**部署地址**: https://unilei.github.io/ray-navigation/
+
 ### 部署到 Vercel
 
 ```bash
@@ -55,13 +84,11 @@ npm run preview
 vercel
 ```
 
-### 部署到 GitHub Pages
+### 部署到 Netlify
 
 ```bash
-# 构建静态文件
-npm run build
-
-# 推送 dist 目录到 gh-pages 分支
+# 使用 Netlify CLI
+netlify deploy --prod
 ```
 
 ### 部署到其他平台
@@ -71,6 +98,9 @@ npm run build
 - Cloudflare Pages
 - AWS S3 + CloudFront
 - 或任何 Web 服务器
+
+📚 **完整部署文档**: [DEPLOY.md](DEPLOY.md)  
+✅ **部署检查清单**: [DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md)
 
 ## 📦 Docker 部署
 

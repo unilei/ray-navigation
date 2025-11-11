@@ -12,7 +12,9 @@
     "lint": "eslint src --ext .js,.vue",
     "lint:fix": "eslint src --ext .js,.vue --fix",
     "format": "prettier --write src",
-    "format:check": "prettier --check src"
+    "format:check": "prettier --check src",
+    "deploy": "npm run build && gh-pages -d dist",
+    "deploy:auto": "./deploy.sh"
   },
   "dependencies": {
     "vue": "^3.3.4"

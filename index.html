@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#007bff">
+  <meta name="description" content="一个简洁高效的网址导航网站，收集最流行和最有用的网站导航。">
+  <meta name="keywords" content="导航, 网址导航, 网站导航, 快速导航, 上网导航">
+  <meta name="author" content="Nav App Team">
+  <meta name="og:type" content="website">
+  <meta property="og:title" content="导航应用 - 快速访问您喜爱的网站">
+  <meta property="og:description" content="一个简洁高效的网址导航网站，收集最流行和最有用的网站导航。">
+  <meta property="og:image" content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'><rect fill='%23007bff' width='1200' height='630'/><text x='50%' y='50%' font-size='300' text-anchor='middle' dominant-baseline='middle'>🧭</text></svg>">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="导航应用">
+  <meta name="twitter:description" content="一个现代化的网址导航应用">
+  
+  <title>导航应用 - 快速访问您喜爱的网站</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%23f8f9fa' width='180' height='180' rx='40'/><text x='90' y='135' font-size='160' text-anchor='middle'>🧭</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  
+  <!-- Preconnect to external resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://example.com/">
+</head>
+<body>
+  <noscript>
+    <p>此应用需要 JavaScript 支持。请在浏览器设置中启用 JavaScript。</p>
+  </noscript>
+  
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+  
+  <!-- Service Worker 注册 -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').catch(() => {
+        // Service Worker 注册失败，继续运行应用
+      })
+    }
+  </script>
+</body>
+</html>

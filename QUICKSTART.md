@@ -127,6 +127,33 @@ export const navigationData = {
 }
 ```
 
+## 🐛 调试
+
+遇到问题？我们提供了完整的调试工具和文档：
+
+**使用内置调试工具**
+```javascript
+import { devLog, devTable, devTimer } from './utils/debug'
+
+devLog('调试信息')
+devTable(data, '数据标题')
+const stop = devTimer('操作名称')
+// ... 代码 ...
+stop()
+```
+
+**VSCode 调试**
+1. 启动开发服务器：`npm run dev`
+2. 按 `F5` 启动调试
+3. 在代码中设置断点
+
+**浏览器 DevTools**
+- 按 `F12` 打开开发者工具
+- 安装 [Vue DevTools](https://devtools.vuejs.org/) 扩展
+- 查看 Console、Network、Performance 面板
+
+📖 查看完整的 [调试指南](docs/DEBUG.md) 和 [调试示例](docs/DEBUG_EXAMPLES.md)
+
 ## 🐛 常见问题
 
 **端口 5173 已被占用？**
